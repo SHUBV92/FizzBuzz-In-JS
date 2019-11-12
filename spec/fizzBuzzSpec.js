@@ -23,17 +23,19 @@ describe('multiples of 5', function(){
     it ('buzzes for 10', function(){
         expect(fizzBuzz.play(10)).toEqual('buzz'); 
     });
+});    
 
+describe('multiples of 3 & 5', function(){    
     it ('divisible by both 3 & 5', function(){
         expect(fizzBuzz.play(15)).toEqual('fizzBuzz');
     });
 });
 
-describe('multiples of 3 & 5', function(){
+describe('multiples of any number', function(){    
     it ('return num if any other num given', function(){
         expect(fizzBuzz.play(34)).toEqual(34)
     });
-});
+    });
 
 });
 
